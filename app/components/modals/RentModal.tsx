@@ -121,7 +121,7 @@ const RentModal = () => {
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       secondaryAction={step === STEPS.CATEGORY ? undefined : onBack}
-      title="Da HipHop Store"
+      title="Airbnb your home!"
       body={bodyContent}
     />
   );

@@ -9,8 +9,8 @@ import ToasterProvider from './providers/ToasterProvider';
 import getCurrentUser from './actions/getCurrentUser';
 
 export const metadata = {
-  title: 'Da HipHop Shop',
-  description: 'HipHop Culture Music and Apparel Store',
+  title: 'Airbnb',
+  description: 'Airbnb - clone',
 };
 
 const font = Nunito({

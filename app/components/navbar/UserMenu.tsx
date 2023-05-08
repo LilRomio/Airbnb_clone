@@ -40,7 +40,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="hidden px-4 py-3 text-sm font-semibold transition rounded-full cursor-pointer md:block hover:bg-neutral-100"
         >
-          Da HipHop Shop
+          Airbnb your home
         </div>
         <div
           onClick={toggleOpen}
@@ -86,10 +86,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           <div className="flex flex-col cursor-pointer">
             {currentUser ? (
               <>
-                <MenuItem onClick={() => {}} label="My Orders" />
+                <MenuItem onClick={() => {}} label="My trips" />
                 <MenuItem onClick={() => {}} label="My Favorites" />
-                <MenuItem onClick={() => {}} label="My Cart" />
-                <MenuItem onClick={rentModal.onOpen} label="Da HipHop Shop" />
+                <MenuItem onClick={() => {}} label="My reservations" />
+                <MenuItem onClick={() => {}} label="My properties" />
+                <MenuItem onClick={rentModal.onOpen} label="Airbnb your home" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="Logout" />
               </>

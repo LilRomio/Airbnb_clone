@@ -16,22 +16,8 @@ const Search = () => {
   cursor-pointer
   "
     >
-      <div
-        className="
-    flex
-    flex-row
-    items-center
-    justify-between"
-      >
-        <div
-          className="
-        text-sm
-        font-semibold
-        px-6
-        "
-        >
-          Music
-        </div>
+      <div className="flex flex-row items-center justify-between ">
+        <div className="px-6 text-sm font-semibold ">Music</div>
         <div
           className="
         
@@ -46,27 +32,9 @@ const Search = () => {
         >
           Apparel
         </div>
-        <div
-          className="
-        text-sm
-        pl-6
-        pr-2
-      
-        flex
-        flex-row
-        items-center
-        gap-3
-        "
-        >
-          <div className="hidden sm:block  ">Add Guests</div>
-          <div
-            className="
-          p-2
-          bg-yellow-500
-          rounded-full
-          text-white
-          "
-          >
+        <div className="flex flex-row items-center gap-3 pl-6 pr-2 text-sm ">
+          <div className="hidden sm:block ">Add Guests</div>
+          <div className="p-2 text-white rounded-full  bg-rose-500">
             <BiSearch size={18} />
           </div>
         </div>

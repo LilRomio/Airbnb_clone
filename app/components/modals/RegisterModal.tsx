@@ -55,9 +55,23 @@ const RegisterModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="Welcome to Da HipHop Shop" subtitle="Create an account" />
-      <Input id="email" label="Email" disabled={isLoading} register={register} errors={errors} required />
-      <Input id="name" label="Name" disabled={isLoading} register={register} errors={errors} required />
+      <Heading title="Welcome to Airbnb" subtitle="Create an account" />
+      <Input
+        id="email"
+        label="Email"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="name"
+        label="Name"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
       <Input
         id="password"
         type="password"
@@ -73,7 +87,12 @@ const RegisterModal = () => {
   const footerContent = (
     <div className="flex flex-col items-center justify-center gap-4 mt-3">
       <hr />
-      <Button outline label="Continue with Google" icon={FcGoogle} onClick={() => signIn('google')} />
+      <Button
+        outline
+        label="Continue with Google"
+        icon={FcGoogle}
+        onClick={() => signIn('google')}
+      />
       <div className="mt-4 font-light text-center text-neutral-500">
         <div className="flex flex-row items-center gap-2">
           <div>Already have an account?</div>
