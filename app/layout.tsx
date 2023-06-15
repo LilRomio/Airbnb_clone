@@ -17,7 +17,11 @@ const font = Nunito({
   subsets: ['latin'],
 });
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const currentUser = await getCurrentUser();
   return (
     <html lang="en">
@@ -29,8 +33,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <RegisterModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-
-        {children}
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
   );
