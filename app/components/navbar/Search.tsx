@@ -17,7 +17,7 @@ const Search = () => {
   "
     >
       <div className="flex flex-row items-center justify-between ">
-        <div className="px-6 text-sm font-semibold ">Music</div>
+        <div className="px-6 text-sm font-semibold ">Anywhere</div>
         <div
           className="
         
@@ -30,11 +30,11 @@ const Search = () => {
         text-center
         "
         >
-          Apparel
+          Any Week
         </div>
         <div className="flex flex-row items-center gap-3 pl-6 pr-2 text-sm ">
           <div className="hidden sm:block ">Add Guests</div>
-          <div className="p-2 text-white rounded-full  bg-rose-500">
+          <div className="p-2 text-white rounded-full bg-rose-500">
             <BiSearch size={18} />
           </div>
         </div>

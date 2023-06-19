@@ -38,6 +38,8 @@ const RegisterModal = () => {
     axios
       .post('/api/register', data)
       .then(() => {
+        toast.success('Success');
+        loginModal.onOpen();
         registerModal.onClose();
       })
       .catch((error) => {
@@ -96,7 +98,10 @@ const RegisterModal = () => {
       <div className="mt-4 font-light text-center text-neutral-500">
         <div className="flex flex-row items-center gap-2">
           <div>Already have an account?</div>
-          <div onClick={toggle} className="cursor-pointer text-neutral-800 hover:underline">
+          <div
+            onClick={toggle}
+            className="cursor-pointer text-neutral-800 hover:underline"
+          >
             Log in
           </div>
         </div>
